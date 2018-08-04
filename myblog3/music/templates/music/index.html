@@ -1,0 +1,51 @@
+{%extends 'music/base.html'%}
+{%block title%}Viberr{%endblock%}
+
+
+{% block body %}
+<h3 class="bg-primary">Albums.</h3>
+
+<div class ="container-fluid">
+  <div class="row">
+	  {%for album in all_album%}
+    	<div class="thumbnail album-cover col-ls-3 col-md-4 col-sm-6 col-xs-12">
+    	  <div class="well">
+	        <img class="img-thumbnail center" src="{{album.album_logo}}">
+
+	      </div>
+	      <div class="">
+	        <div class="well">
+				<a href="{%url 'music:detail' album.id %}"><b>{{album.album_title}}</b></a>
+	        </div>
+	        <div class="well">
+    	      {{album.artist }}
+    	    </div>
+    	    <div class="Albumtools">
+    	      <div class="thumbnail">dad da da</div>
+    	      <div class="thumbnail favouriteAlbum"><span class="glyphicon glyphicon-star" ></span></div>
+    	      <div class="thumbnail deleteAlbum"><span class="glyphicon glyphicon-trash" ></span></div>
+    	    </div>
+    	  </div>
+    	</div>
+	  {%endfor%}
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

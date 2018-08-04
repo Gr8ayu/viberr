@@ -1,0 +1,37 @@
+.well {
+  padding:10px;
+    margin:5px;
+}
+
+.Albumtools{
+  display:flex;
+  justify-content:flex;
+  flex-direction: row;
+
+}
+
+.favouriteAlbum{
+  margin-left:10px;
+
+  color:#bcbf18;
+}
+
+.deleteAlbum{
+  display:relative;
+  right:0px;
+  color:#ff0c0c;
+}
+
+
+.album-logo{
+  width:100%;
+  height:100%;
+}
+
+.album-cover{
+margin:auto;
+}
+
+.well{
+padding:3px;
+}
